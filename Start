@@ -4,3 +4,4 @@ $ cd ~/Nutri-Jump
 
 $ git init
 
+$ touch README
