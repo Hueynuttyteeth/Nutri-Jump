@@ -46,3 +46,5 @@ Just download it and save it somewhere in a folder where you won't lose it.
 Now that you have The Project you can now continue where we left off.
 First thing you need to do is to Start up GameMaker. Now go to Import 
 and find the Project file where you saved it. Open it up and you should be good to go!
+
+Need more help? Look at README Prototype 4 for more info on Prototype 4 Specifically.
