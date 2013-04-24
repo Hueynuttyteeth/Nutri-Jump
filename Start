@@ -1,0 +1,6 @@
+$ mk ~/Nutri-Jump
+
+$ cd ~/Nutri-Jump
+
+$ git init
+
