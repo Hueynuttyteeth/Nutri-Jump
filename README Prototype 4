@@ -1,0 +1,53 @@
+Prototype 4
+===========
+
+So, now that you have everything you need, you probably have GameMaker up and have Prototype 4 loaded up and running.
+
+Now what?
+Well, next step is to learn the Platform, and what everything is and what it does.
+------------------------------------------------------------------------------------------------------------
+
+*1* GameMaker
+
+On your left you will see a hierarchy of file sets. This includes:
+ Sprites- This is the Images used for the Objects to be seen in the game.
+   -Platforms - Images for the Platform Objects
+      -Old Platforms - Unused or For Debugging
+      -New Platforms - Images for the Ledges Objects
+   -Buttons - Images for the Buttons.
+   -Other Graphics - Images like the Loading screen and layout options
+   -Food - Images for the Various foods
+   -Death Platforms- Images mainly for debug to see where they are, but for the objects that destroy the other objects.
+   -Boy - Image for the Boy sprite
+   spr_me - The sprite for the character currently
+
+ Sounds- This is where and sound effects or music would be at.
+
+ Backgrounds- This is where Background images for the game are at.
+   -OLD - Unused or Debugging
+   -NEW - Used in the game
+
+ Paths- (Not used) This is used to set specific paths for objects to move.
+
+ Scripts- (Not used) Code for certain/specific actions.
+
+ Fonts- This holds the font used for any text outputted in the game.
+
+ Time Lines- (Not used, nor ever was even tested) I don't know what this does   exactly, but the Wiki should give a better idea of what it does.
+
+  -Objects- This is where all the Entities are that are used in the game.
+   -Buttons - This would be anything that button related: Up, Left, Right, Pause, Play, ect.
+   -Controls - This is mostly the Setup code for the game to get everything working correctly. Inside each of the objects in Code is detailed comments about what everything does.
+   -Death Platforms - The code for certain platforms to remove other objects.
+   -Platforms - Old, and not used except for debugging. (object12 is used to show the score).
+   -Ledges - The entity that the player jumps from one to another.
+   -Foods - The food entities that the player collects for score.
+   -Other - Old, unused, except for the "PAUSED" object.
+   -Options - Used for switching layout options.
+
+  -Rooms- Or the Screens of the game.
+  -Included Files- (Not used nor ever was) *See Time Line*
+  -Extensions- This is for special scripts, currently the one included is multiTouch which was never used actually.
+Plus 2 files:
+  -Game Information - Gives info on the game (And where this same info is as well!)
+  -Global Game Settings - This show everything about what to do with exports and what needs to be changed.
