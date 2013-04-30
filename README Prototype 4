@@ -1,0 +1,170 @@
+Prototype 4
+===========
+
+So, now that you have everything you need, you probably have GameMaker up and have Prototype 4 loaded up and running.
+
+Now what?
+Well, next step is to learn the Platform, and what everything is and what it does.
+Contents
+========
+1 - GameMaker
+2 - How to Start
+  2.a - ScreenPlay
+3 - Standards and things to know.
+4 - where to go now?
+5 - Who am I?
+------------------------------------------------------------------------------------------------------------
+
+*1* GameMaker
+
+On your left you will see a hierarchy of file sets. This includes:
+ Sprites- This is the Images used for the Objects to be seen in the game.
+   -Platforms - Images for the Platform Objects
+      -Old Platforms - Unused or For Debugging
+      -New Platforms - Images for the Ledges Objects
+   -Buttons - Images for the Buttons.
+   -Other Graphics - Images like the Loading screen and layout options
+   -Food - Images for the Various foods
+   -Death Platforms- Images mainly for debug to see where they are, but for the objects that destroy the other objects.
+   -Boy - Image for the Boy sprite
+   spr_me - The sprite for the character currently
+
+ Sounds- This is where and sound effects or music would be at.
+
+ Backgrounds- This is where Background images for the game are at.
+   -OLD - Unused or Debugging
+   -NEW - Used in the game
+
+ Paths- (Not used) This is used to set specific paths for objects to move.
+
+ Scripts- (Not used) Code for certain/specific actions.
+
+ Fonts- This holds the font used for any text outputted in the game.
+
+ Time Lines- (Not used, nor ever was even tested) I don't know what this does   exactly, 
+but the Wiki should give a better idea of what it does.
+
+  -Objects- This is where all the Entities are that are used in the game.
+   -Buttons - This would be anything that button related: Up, Left, Right, Pause, Play, ect.
+   -Controls - This is mostly the Setup code for the game to get everything working correctly. 
+Inside each of the objects in Code is detailed comments about what everything does.
+   -Death Platforms - The code for certain platforms to remove other objects.
+   -Platforms - Old, and not used except for debugging. (object12 is used to show the score).
+   -Ledges - The entity that the player jumps from one to another.
+   -Foods - The food entities that the player collects for score.
+   -Other - Old, unused, except for the "PAUSED" object.
+   -Options - Used for switching layout options.
+
+  Rooms- Or the Screens of the game.
+   -Android Game - Holds all the screens for the Android game.
+   -OLD - Unused
+   -DEBUG - Used for Debugging like checking platform and food generation.
+   -Apple Game - Intended for use for iOS version of the game. (Screen size changes)
+
+  Included Files- (Not used nor ever was) *See Time Line*
+
+  Extensions- This is for special scripts, currently the one included is multiTouch which was never used actually.
+
+Plus 2 files:
+  -Game Information - Gives info on the game (And where this same info is as well!)
+  -Global Game Settings - This show everything about what to do with exports and what needs to be changed.
+
+*2* How to start
+
+Now that you have the game up and running in the top left there is a bar of icons... Look for the Green arrow icon
+(the 5th button to the right) and make sure you have the Target on "Windows". If not, change to windows. Then click 
+the play button. The red arrow is the Debug, you shouldn't need this a whole lot, but it may come in handy for later.
+Once the game has compiled it should pop up a 1280x800 screen! (see Screen Play on how to move around)
+
+*2.a* Screen play
+
+First off there is the Beginning loading screen which is never seen(room_starter). This is used to load up the
+next Room in GameMaker. Because GameMaker loads up the first room in the list while compiling, and this helps with
+the flow to keep it organized). Next in line is the Play menu(room_AndroidStart) this is where the player can press 
+"play to start the game and move to the next screen, or exit the whole game. Once "play" is tapped or clicked, you 
+move onto the options screen(room_AndroidOption) where players can chose their button layout to then play the game 
+or go back to the play menu. Once their layout is picked they move onto the set up room where everything is 
+initialized for the game (room_AndroidSetup). Then the game is sent to the ACTUAL game play screen (room_AndroidPlay)
+where all the gameplay mechanics are located.
+
+room_start       Close game
+    ↓ (auto)     ↑ (exit)                 (play)
+   room_AndroidStart ↔ room_AndroidOption → room_AndroidSetup 
+          ↑        (play)                      (auto) ↕ (retry)
+               ↖      ←       ←      room_AndroidPlay   →     Close game
+                     (menu)                           (exit)
+
+*3* Standards and things to know.
+
+While making this game, there are are few things I have kept the same to make sure everything works and
+looks like it should. For example:
+
+Sprites:
+   > ALWAYS when making a new sprite start with "spr_".
+   > Any sprite that is used to appear using coding needs to b half the size of the requested.  
+Arrows for movement are 16x16 due to when being implemented in code, the size is enlarged to about
+3~4 times its original size. Same goes with the pause button. (The arrow button sprites are larger 
+than the player which is 48x48 while the buttons are "supposedly" 16x16)
+   > Death platforms are black to see during debug. 
+   > Ledges are masked( mask is the collision box) flat on top to make smooth movement for the player
+so that he doesn't get stuck.
+
+Objects:
+   > Like with sprites ALWAYS start an object with "obj_".
+   > Buttons usually don't have a sprite to help with the tap animation. They are coded to switch images 
+while being pressed and to change back when released. Same goes with the Options, they work the same way.
+   > Controls:
+      + Obj_setup is used while obj_setup IS NOT.
+      + obj_control is also NOT USED.
+   > Ledges have 2 of each, one for for Debug and other is used in game. This is used to help test platforms 
+without breaking them completely if a test goes wrong.
+
+Rooms:
+   > Like Objects and Sprites, name like "room_(name of device)(use)" 
+   > Rooms are split into their respective folders in a certain order, this the flow and changing it may 
+have unwanted problems.
+
+*4* Where to go now?
+
+So, as of 4/9/13, We went to the Holy Trinity School and had a test group of 14~15 kids from ages 5-8.
+Overall, we passed with flying colors. The kids were loving it. But, this is where we started to notice things.
+The kids didn't really play for knowing more, than rather for the play. Granted, we don't have anything that has 
+factual info for kids to learn about.
+ (For full message, go here: 
+https://bluevalleycenterforadvancedprofessionalstudies.basecamphq.com/projects/7912057-cerner-2d-mobile-game-for-android-iphone/posts/74627395/comments )
+Suggestions they had:
+ * Shop system, to buy more/new characters (possibly other ethnic groups), and upgrades like jetpacks.
+ * Coins in game to collect for the shop.
+ * Possibly a Double jump.
+ * Multiplayer that you race and push each-other off.
+ * Ability to go THROUGH platforms. I assume from underneath.
+ * Girl characters Obviously.
+ * Different Backgrounds.
+ * Option to be timed.
+ * Good foods give time while bad takes away.
+ * Closer platforms, Power-ups.
+What I plan to implement:
+ - A store/shop system for buying characters(and possibly other things).
+ - Medal/achievement System. Kids like rewards.
+ - HOPEFULLY, Healthy food facts.
+ - Make the game easier.
+ - Add a Girl character.
+
+Other:
+~Another big goal is to actually export this game to a device so you don't have to keep
+USB Debug the game on an Android. 
+~Make the Apple Version.
+~Getting actual nutritional facts for the game
+~Food facts shown while loading.
+~Possibly new graphics.
+
+*5* Who am I?
+
+Well, I am Brandon Bauer, the previous Head Developer on this project. I started on this in Fall 2012 with
+one group and got little to nothing done with it. Beginning of 2013, I got a new team and we cracked down on this
+game and got it to where it is now. 95% of everything you see in the game I made and learned to use GameMaker while 
+doing it. The only code that is not mine is the code to the setup/controller/spawner however, I did edit his/her code 
+and was open to public to use. Credit to Arusiasotto, GMC member. If you ever have problems with the game or if 
+something doesn't work for some reason or just need some GameMaker Help, You can contact me at:
+brandonmbauer@gmail.com 
+or text me at (913)-963-1357. 
