@@ -8,6 +8,15 @@ Nutri-Jump is a game made in GameMaker:Studio, a software made by YoYo
 Games. Nutria-Jump, Originally named "FoodFury" until we found out that the 
 name was already taken by another game. This Read-me is here to show you 
 how to Download, Install, and continue where we left off last in our progress!
+Contents
+=========
+1 - Getting the Platform (GameMaker).
+
+2 - Getting Steam (Optional!)
+
+3 - Getting the Project.
+
+4 - Starting it up.
 
 ------------------------------------------------------------------------------------------------------------
 *1* Getting the Platform (GameMaker).
