@@ -33,8 +33,8 @@ started to release Software such as GameMaker which is why we used it.
 
 *2* Getting Steam (Optional!)
 
-This is completely optional, but is very handy. First, go to http://store.steampower
-ed.com/ Then at the top right of the screen do "Install Steam". Then click "Install Steam Now"
+This is completely optional, but is very handy. First, go to http://store.steampowered.com/ 
+Then at the top right of the screen do "Install Steam". Then click "Install Steam Now"
 on the new page, You may need an Admin to sign off on the UAC protection. Once steam is installed,
 use a CAPS steam account to sign into Steam. 
 Once you are logged in, Go to the Store page, then in the navigation bar at the top,
