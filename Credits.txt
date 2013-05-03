@@ -1,0 +1,35 @@
+Credits to the people who all helps with this journey and helped make this possible.
+
+
+Cerner - The people who the project is for, and for helping us when we needed it. 
+	-Robin McClean
+	-Brian Carter
+	-Garry Polley
+	-Sam Bao
+	-Hailey Eisenbarth 
+
+Bandon Bauer - Head Developer in making the game from the very start from Aug 2012 - May 2013.
+
+Hayden Svancara - Assistant Developer in making this from Jan 2013 - May 2013.
+
+Anna Jones - Designer who made all of our pretty looking sprite for our objects from Jan 2013 - May 2013.
+
+Patrick Wong - Designer in beginning who help start us off during Aug 2012 - Dec 2012.
+
+Sarah Kenny -  Designer in beginning who help start us off during Aug 2012 - Dec 2012.
+
+Dalton Shader - Global business Student who help with out marketing and status reports. (Aug 2012 - May 2013)
+
+Kody Yanik - Global business Student who help with out marketing and status reports. (Aug 2012 - May 2013)
+
+Alex Wagoner - Global business Student who help with out marketing and status reports and also was our Project manager from Jan 2013 - May 2013.
+
+Greg Teschner - Instructor a CAPS who helped lead the way during the whole time working. (Aug 2012 - May 2013)
+
+Leah Karchin - Instructor a CAPS for the Design students.
+
+Alex Meiser - Assistant Developer who help learn GameMaker durin the first steps of the journey from Aug 2012 - Dec 2012.
+
+
+
+© 2013 CAPS/Cerner
